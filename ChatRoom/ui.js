@@ -34,7 +34,7 @@ class ChatUI {
                 <span class="username">${msg.username}:</span>
                 <span class="message">${msg.message}</span>
                 <div class="datum">${this.formatDate(msg.created_at.toDate())}
-                <img src="/ChatRoom/314864_trash_can_icon.png" alt="" class="trash"></div>
+                <img src="/314864_trash_can_icon.png" alt="" class="trash"></div>
             </div>`;
             poruka.addEventListener(`click`, e => {
                 if(e.target.nodeName === `IMG`) {
@@ -62,7 +62,7 @@ class ChatUI {
                 <span class="username">${msg.username}:</span>
                 <span class="message">${msg.message}</span>
                 <div class="datum">${this.formatDate(msg.created_at.toDate())}
-                <img src="/ChatRoom/314864_trash_can_icon.png" alt="" class="trash"></div>
+                <img src="/314864_trash_can_icon.png" alt="" class="trash"></div>
             </div>`;
             poruka.addEventListener(`click`, e => {
                 if(e.target.nodeName === `IMG`) {

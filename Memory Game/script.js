@@ -322,7 +322,7 @@ btnYes.addEventListener(`click`, (e) => {
                     red.id = i / 4;
                 }
                 let slika = document.createElement(`img`);
-                slika.src = `Slike/BG.jpg`;
+                slika.src = `/Slike/BG.jpg`;
                 slika.id = slikeEasy[i].id;
                 slika.check = false;
                 red.append(slika);
@@ -576,7 +576,6 @@ tabla.addEventListener(`click`, e => {
         else if(cardOne && !cardTwo) {
             e.target.src = slike[e.target.id - 1].url;
             cardTwo = e.target;
-            console.log(cardTwo);
             if(cardOne.id == cardTwo.id) {
                 br++;
                 cardOne.style.pointerEvents = "none";
@@ -631,8 +630,8 @@ tabla.addEventListener(`click`, e => {
             }
             else {
                 setTimeout(function() {
-                    cardOne.src = (`http://127.0.0.1:5500/Memory%20Game/Slike/BG.jpg`);
-                    cardTwo.src = (`http://127.0.0.1:5500/Memory%20Game/Slike/BG.jpg`);
+                    cardOne.src = (`Slike/BG.jpg`);
+                    cardTwo.src = (`Slike/BG.jpg`);
                     cardOne.style.pointerEvents = "auto";
                     cardOne = undefined;
                     cardTwo = undefined;
