@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fafafa; ;
+}
+
+header {
+    background-color: #ffe9e3;
+    text-align: center;
+}
+
+header h1 a {
+    color: #7c73e6;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+header h1 a:hover {
+    color: #7d73e68a;
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+    min-height: 90vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dugme {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #fafafa;
+    border-radius: 0.3rem;
+}
+
+.dugme:hover {
+    cursor: pointer;
+    cursor: pointer;
+    background-color: #ffe9e3;
+}
+
+#div0, #div1, #div2, #div3, #div4 {
+    border: 1px solid rgba(44, 121, 184, 0.527);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div1, #div2, #div3, #div4 {
+    margin-top: 1rem;
+}
+
+#div4 {
+    margin-bottom: 1rem;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#dugmici {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tacno {
+    color: green;
+    font-size: 1.1rem;
+}
+
+.netacno {
+    color: red;
+    font-size: 1.1rem;
+}
+
+#ispisOdgovora {
+    width: 60%;
+    margin: 0 auto 0 auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}

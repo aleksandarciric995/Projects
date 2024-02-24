@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="row">
+        <!-- NASLOV VREME IME -->
+        <div id="naslovVreme" class="col-6">
+            <h2 id="naslov">Memory Game</h1>
+            <!-- Ime i vreme -->
+            <input type="text" name="ime" id="ime" placeholder="Player name">
+            <input type="number" name="vreme" id="vreme" value="0" min="0">
+            <!-- Odabir tezine -->
+            <div id="odabirTezine">
+                <input type="radio" name="odabirTezine" id="easy" checked>Easy
+                <input type="radio" name="odabirTezine" id="medium">Medium
+                <input type="radio" name="odabirTezine" id="hard">Hard
+                <input type="radio" name="odabirTezine" id="insane">Insane
+                <button type="button" id="btnStart">Start</button>
+            </div>
+        </div>
+        <!-- SKOR TABELA -->
+        <div id="skor" class="col-6">
+            <h2>High Score</h2>
+            <button type="button" id="btnEasy" class="mob">Easy</button>
+            <button type="button" id="btnMedium" class="mob">Medium</button>
+            <button type="button" id="btnHard" class="mob">Hard</button>
+            <button type="button" id="btnInsane" class="mob">Insane</button>
+            <!-- ISPIS REZULTATA -->
+            <div id="ispisRezultata" class="vidljiv"></div>
+
+
+            
+        </div>
+    </header>
+
+    <!-- TABLA -->
+
+    <div id="tabla" class="row col-12"></div>
+    
+    <!-- DIV ALERT -->
+    <div id="alert">
+        <h2>Well Done!</h2>
+        <p>New Game?</p>
+        <div>
+            <button id="btnYes">Yes!</button>
+            <button id="btnNo">No.</button>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

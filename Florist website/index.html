@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cvecara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ovde cu da napravim pocetak -->
+    <header>
+        <h1>Cvećara</h1>
+    </header>
+
+    <section id="sectionJedan">
+        <form action="">
+            <!-- Odabir cveca -->
+            <div id="odabirCveca">
+                <h2>Odaberite cveće:</h2>
+                <div id="divRuze">
+                    <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="ruze" placeholder="Cena po cvetu je 150 din.">
+                    <label for="ruze">Ruže</label>
+                </div>
+                <div id="divLjiljani"> 
+                    <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="ljiljani" placeholder="Cena po cvetu je 120 din.">
+                    <label for="ljiljani">Ljiljani</label>
+                </div> 
+                <div id="divGerberi"> 
+                    <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="gerberi" placeholder="Cena po cvetu je 70 din.">
+                    <label for="gerberi">Gerberi</label>
+                </div> 
+            </div>
+                <!-- Dodatni pokloni -->
+            <div id="dodatniPokloni">
+                <h2>Dodatni pokloni:</h2>
+                <div id="divBombonjera">
+                    <input type="checkbox" name="pokloni" id="bombonjera" value="bombonjera">
+                    <label for="bombonjera" title="+500 din">Bombonjera</label>
+                </div>
+                <div id="divCokolada">
+                    <input type="checkbox" name="pokloni" id="cokolada" value="čokolada">
+                    <label for="cokolada" title="+500 din">Čokolada</label>
+                </div>
+                <div id="divSampanjac">
+                    <input type="checkbox" name="pokloni" id="sampanjac" value="šampanjac">
+                    <label for="sampanjac" title="+500 din">Šampanjac</label>
+                </div>
+            </div>
+                <!-- Placanje -->
+            <div id="placanje">
+                <h2>Plaćanje:</h2>
+                <div id="divKes">
+                    <input type="radio" name="placanje" id="kes">
+                    <label for="kes">Keš</label>
+                </div>
+                <div id="divKartica">
+                    <input type="radio" name="placanje" id="kartica">
+                    <label for="kartica" title="Platite karticom iznos veći od 2000 din i ostvarite 10% popusta">Kartica</label>
+                </div>
+            </div>
+            <div id="dugmici">
+                <input type="submit" value="Izračunaj" id="btnSubmit">
+                <input type="reset" value="Resetuj" id="btnReset">
+            </div>
+        </form>
+        <div id="divRacuna">
+            <h2>Vaša porudžbina:</h2>
+            <div id="ispisRuza"></div>
+            <div id="ispisLjiljana"></div>
+            <div id="ispisGerbera"></div>
+            <div id="ispisBombonjera"></div>
+            <div id="ispisCokolada"></div>
+            <div id="ispisSampanjac"></div>
+            <div id="ispisUkupnaCena"></div>
+            <div id="cenaBezPopusta"></div>
+            <div id="cenaSaPopustom"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

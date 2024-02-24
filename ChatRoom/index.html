@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- PRVI DEO ZADATKA, HEADER -->
+    <header>
+        <h1 id="naslov">Acin ChatRoom</h1>
+        <h3>Choose a chatroom</h3>
+        <div id="roomSelection">
+            <button type="button" id="generalRoom" class="btnRooms">#general</button>
+            <button type="button" id="jsRoom" class="btnRooms">#js</button>
+            <button type="button" id="homeworksRoom" class="btnRooms">#homeworks</button>
+            <button type="button" id="testsRoom" class="btnRooms">#tests</button>
+        </div>
+    </header>
+    
+    <!-- DEO ZA PRIKAZ PORUKA -->
+    <section id="prikazPoruka">
+        <ul id="ulListaPoruka"></ul>
+    </section>
+
+    <!-- Inputi - text poruke i slanje -->
+    <div id="inputs">
+        <div id="divBoja">
+            <input type="color" name="boja" id="inputBoja">
+            <button type="button" id="btnColor">Update color</button>
+        </div>
+        <div id="divSend">
+            <textarea name="poruka" id="inputText" cols="30" rows="1" placeholder="Your message..."></textarea>
+            <button type="button" id="btnSend">Send</button>
+        </div>
+        <div id="divUser">
+            <input type="text" name="user" id="inputUser" placeholder="Update username">
+            <button type="button" id="btnUser">Update</button>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyC8gYEHvU7h5GzHc5_bTRH3xnXZ2FAWtgU",
+        authDomain: "itb-js-pxcy403.firebaseapp.com",
+        projectId: "itb-js-pxcy403",
+        storageBucket: "itb-js-pxcy403.appspot.com",
+        messagingSenderId: "278721594112",
+        appId: "1:278721594112:web:1ad902c1e1dac08a56a9e5"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    let db = firebase.firestore();
+        </script>
+        <script src="app.js" type="module"></script>
+</body>
+</html>
